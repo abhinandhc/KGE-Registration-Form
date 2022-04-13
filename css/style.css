@@ -1,0 +1,10 @@
+nav{
+    background-color: blue;
+    color: white;
+    padding: 4rem;
+}
+html{
+    background-color: #DBE2EF;
+    background-image: -webkit-linear-gradient(70deg, #112D4E 50%, #DBE2EF 50%);
+    min-height: 1000px;       
+}
