@@ -1,10 +1,10 @@
 nav,.heading{
     color: white;
 }
-
 nav{
     background-color: #06113C;
     padding: 4rem;
+    font-family: 'Fira Sans', sans-serif;
 }
 body{
     background-color: #DBE2EF;
@@ -13,17 +13,20 @@ body{
     position: relative;    
 }
 form{
-    background-color: white;
     border:  1px black;
     border-radius: 2%;
     padding: 2rem;
     margin: 0 auto; 
+}
+#mainform{
+    background-color: white;
 }
 form,#contact{
     width:60%;
 }
 #main,#mainpre{
 text-align: center;
+font-family: 'Fira Sans', sans-serif;
 }
 .btnpg{
     margin: 1rem;
@@ -36,13 +39,26 @@ text-align: center;
 .heading{
     background-color: #4700D8;
     margin: 1%;
-    padding: 2%;
-    border-radius: 3%;
+    padding: 1%;
+    border-radius: 2%;
+    font-size: 1rem;
 }
-#options,#contact{
+#options{
 background-color: #DDDDDD;
 color: #06113C;
 padding: 1.5rem;
+}
+#education,#contactinfo,#internship,#internoption,#reference,#contact{
+    background-color: white;
+    color: #06113C;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+.mb-3,#options,.form-check{
+    margin-top: 2%;
+}
+h5{
+    margin-top: 5%;
 }
 #date{
     border: solid 1px gray;
