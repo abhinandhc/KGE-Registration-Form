@@ -1,10 +1,33 @@
 nav{
-    background-color: blue;
+    background-color: #06113C;
     color: white;
     padding: 4rem;
 }
-html{
+body{
     background-color: #DBE2EF;
-    background-image: -webkit-linear-gradient(70deg, #112D4E 50%, #DBE2EF 50%);
-    min-height: 1000px;       
+    background-image: -webkit-linear-gradient(70deg, #4700D8 50%, #DBE2EF 50%);
+    min-height: 1000px;  
+    position: relative;    
+}
+form{
+    background-color: white;
+    border:  1px black;
+    border-radius: 5%;
+    padding: 2rem;
+    margin: 0 auto; 
+    width:50%;
+}
+#main{
+text-align: center;
+}
+#formsection{
+margin: 2rem 0 0 10rem;
+}
+.btnpg{
+    margin: 1rem;
+    max-width: 6rem;
+}
+#success{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:1.5rem;
 }
