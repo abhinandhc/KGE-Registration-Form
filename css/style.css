@@ -1,11 +1,13 @@
 nav,.heading{
     color: white;
 }
+/* styled navbar */
 nav{
     background-color: #06113C;
     padding: 4rem;
     font-family: 'Fira Sans', sans-serif;
 }
+/* division and dropped colour to body by linear gradient */
 body{
     background-color: #DBE2EF;
     background-image: -webkit-linear-gradient(70deg, #4700D8 50%, #DBE2EF 50%);
@@ -24,9 +26,10 @@ form{
 form,#contact{
     width:60%;
 }
-#main,#mainpre{
-text-align: center;
-font-family: 'Fira Sans', sans-serif;
+#main,#mainpre,#footer{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
 }
 .btnpg{
     margin: 1rem;
@@ -36,6 +39,7 @@ font-family: 'Fira Sans', sans-serif;
     font-family: Arial, Helvetica, sans-serif;
     padding:1.5rem;
 }
+/* section heading highlighted */
 .heading{
     background-color: #4700D8;
     margin: 1%;
@@ -43,16 +47,16 @@ font-family: 'Fira Sans', sans-serif;
     border-radius: 2%;
     font-size: 1rem;
 }
-#options{
-background-color: #DDDDDD;
-color: #06113C;
-padding: 1.5rem;
-}
 #education,#contactinfo,#internship,#internoption,#reference,#contact{
     background-color: white;
     color: #06113C;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
+}
+#options{
+background-color: #DDDDDD;
+color: #06113C;
+padding: 1.5rem;
 }
 #contact{
     margin-top: 1.5rem;
@@ -63,6 +67,7 @@ padding: 1.5rem;
 h5{
     margin-top: 5%;
 }
+/* styled the date input */
 #date{
     border: solid 1px gray;
     border-radius: 5%;
@@ -75,4 +80,17 @@ h5{
 }
 pre{
     text-align: left;
+}
+/* removed arrows from number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+#footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;    
 }
