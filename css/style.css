@@ -51,8 +51,11 @@ padding: 1.5rem;
 #education,#contactinfo,#internship,#internoption,#reference,#contact{
     background-color: white;
     color: #06113C;
-    margin: 1.5rem;
+    margin-bottom: 1.5rem;
     padding: 1.5rem;
+}
+#contact{
+    margin-top: 1.5rem;
 }
 .mb-3,#options,.form-check{
     margin-top: 2%;
