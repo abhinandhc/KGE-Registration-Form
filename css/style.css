@@ -1,4 +1,4 @@
-nav,.heading{
+nav{
     color: white;
 }
 /* styled navbar */
@@ -7,26 +7,36 @@ nav{
     padding: 4rem;
     font-family: 'Fira Sans', sans-serif;
 }
-/* division and dropped colour to body by linear gradient */
 body{
-    background-color: #DBE2EF;
-    background-image: -webkit-linear-gradient(70deg, #4700D8 50%, #DBE2EF 50%);
-    min-height: 1000px;  
-    position: relative;    
+    margin:0;
+	color:#edf3ff;
+	background:#c8c8c8;
+	background:url(https://cdn-media-2.freecodecamp.org/w1280/5f9c9cfc740569d1a4ca3543.jpg) fixed; 
+    /* set a fixed background from hdwalls.com */
+	background-size: cover;
+	font:600 16px/25px;   
+}
+/* input tag colour changed */
+input[type=text],[type=number],[type=email],[type=date]{
+    background-color: rgba(0,0,0,.19);
+}
+.login-wrap{
+	width: 100%;
+	margin:auto;
+	max-width:80%;
+	min-height:510px;
+	position:relative;
+	background-size: cover;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 form{
     border:  1px black;
     border-radius: 2%;
     padding: 2rem;
-    margin: 0 auto; 
+    margin: 0 auto;
+    width:70%; 
 }
-#mainform{
-    background-color: white;
-}
-form,#contact{
-    width:60%;
-}
-#main,#mainpre,#footer{
+#main,#mainpre,footer{
     margin-top: 2rem;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
@@ -40,25 +50,22 @@ form,#contact{
     padding:1.5rem;
 }
 /* section heading highlighted */
-.heading{
-    background-color: #4700D8;
-    margin: 1%;
-    padding: 1%;
-    border-radius: 2%;
-    font-size: 1rem;
+#ftr1,#ftr2{
+    background-color: #06113C;
+    text-align: left;
+    color: white;
+    border: 1px solid #06113C;
+
 }
-#education,#contactinfo,#internship,#internoption,#reference,#contact{
-    background-color: white;
-    color: #06113C;
+.col-md-6,.col-md-4,#reference{
     margin-bottom: 1.5rem;
     padding: 1.5rem;
+    border: 1px ;
 }
 #options{
-background-color: #DDDDDD;
-color: #06113C;
 padding: 1.5rem;
 }
-#contact{
+.col-md-4{
     margin-top: 1.5rem;
 }
 .mb-3,#options,.form-check{
@@ -69,14 +76,14 @@ h5{
 }
 /* styled the date input */
 #date{
-    border: solid 1px gray;
+    border: solid 1px rgba(0,0,0,.5);
     border-radius: 5%;
     padding: 1.5rem;
 }
 #site{
     font-style: normal;
     font-size: 1.5rem;
-    color: #06113C;
+    color: white;
 }
 pre{
     text-align: left;
@@ -89,6 +96,7 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+/* footer content positioning */
 #footer {
     position: absolute;
     bottom: 30px;
