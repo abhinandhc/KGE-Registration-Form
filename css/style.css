@@ -11,10 +11,10 @@ body{
     margin:0;
 	color:#edf3ff;
 	background:#c8c8c8;
-	background:url(https://cdn-media-2.freecodecamp.org/w1280/5f9c9cfc740569d1a4ca3543.jpg) fixed; 
-    /* set a fixed background from hdwalls.com */
+	background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxILNNnoHqJA96SNXj1SAvYRjgyNG2gkr-fA&usqp=CAU) fixed; 
+    /* set a fixed background from google */
 	background-size: cover;
-	font:600 16px/25px;   
+	font:600 16px/25px;    
 }
 /* input tag colour changed */
 input[type=text],[type=number],[type=email],[type=date]{
@@ -24,7 +24,6 @@ input[type=text],[type=number],[type=email],[type=date]{
 	width: 100%;
 	margin:auto;
 	max-width:80%;
-	min-height:510px;
 	position:relative;
 	background-size: cover;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
@@ -54,25 +53,19 @@ form{
     background-color: #06113C;
     text-align: left;
     color: white;
-    border: 1px solid #06113C;
-
 }
 .col-md-6,.col-md-4,#reference{
     margin-bottom: 1.5rem;
-    padding: 1.5rem;
     border: 1px ;
 }
-#options{
+#options,.col-md-6,.col-md-4,#reference{
 padding: 1.5rem;
 }
 .col-md-4{
     margin-top: 1.5rem;
 }
-.mb-3,#options,.form-check{
+.mb-3,#options,.form-check,h5{
     margin-top: 2%;
-}
-h5{
-    margin-top: 5%;
 }
 /* styled the date input */
 #date{
@@ -101,4 +94,20 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     bottom: 30px;
     width: 100%;    
+}
+
+/* media query for screen adjustments */
+@media only screen and (max-width:800px) {
+    .row,h4,h5,li{
+    text-align: left;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.80rem;
+    }
 }
