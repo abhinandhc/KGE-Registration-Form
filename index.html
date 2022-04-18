@@ -19,274 +19,293 @@
 
     <body>
         <div class="login-wrap">
-        <section>
-            <!-- navbar section -->
-            <nav class="navbar navbar-expand-sm navbar-dark bg-custom">
-                <a class="navbar-brand" href="index.html">KGE TECHNOLOGIES</a>
-            </nav>
-        </section>
-        <div class="container" id="main">
-            <img src="images/img.png" alt="" height="100" width="120">
-            <h1>KGE TECHNOLOGIES PRIVATE LTD</h1>
-            <p id="mainpre">
-                Basic Form for Internship Registration in KGE Technologies Pvt Ltd. <br>
-                Internship would be Work from Home for candidates till 2022, <br>
-                but won't be mentioned in any documents.
-            </p>
-        </div>
-        <form action="/" method="post" id="mainform">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="firstform">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full name</label>
-                                <input type="text" class="form-control" id="name" required>
+            <section>
+                <!-- navbar section -->
+                <nav class="navbar navbar-expand-sm navbar-dark bg-custom">
+                    <a class="navbar-brand" href="index.html">KGE TECHNOLOGIES</a>
+                </nav>
+            </section>
+            <div class="container" id="main">
+                <img src="images/img.png" alt="" height="100" width="120">
+                <h1>KGE TECHNOLOGIES PRIVATE LTD</h1>
+                <p id="mainpre">
+                    Basic Form for Internship Registration in KGE Technologies Pvt Ltd. <br>
+                    Internship would be Work from Home for candidates till 2022, <br>
+                    but won't be mentioned in any documents.
+                </p>
+            </div>
+            <form action="/" method="post" id="mainform">
+                <div class="container" id="contactme">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="firstform">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="mail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="city" class="form-label">Your City</label>
+                                    <input type="text" class="form-control" id="city" required>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="mail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="mail" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="city" class="form-label">Your City</label>
-                                <input type="text" class="form-control" id="city" required>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="education">
+                                <!-- education section -->
+                                <div class="mb-3">
+                                    <label for="degree" class="form-label">Current Degree & Branch</label>
+                                    <input type="text" class="form-control" id="degree" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="year" class="form-label">Pass out Year</label>
+                                    <input type="number" class="form-control" id="year" required>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div id="education">
-                            <!-- education section -->
-                            <div class="mb-3">
-                                <label for="degree" class="form-label">Current Degree & Branch</label>
-                                <input type="text" class="form-control" id="degree" required>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id="contactinfo">
+                                <!-- contact section -->
+                                <div class="mb-3">
+                                    <label for="mb" class="form-label">Mobile number</label>
+                                    <input type="number" class="form-control" id="mb" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="watzp" class="form-label">Whatsapp number</label>
+                                    <input type="number" class="form-control" id="watzp" required>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="year" class="form-label">Pass out Year</label>
-                                <input type="number" class="form-control" id="year" required>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="internship">
+                                <!-- internship section -->
+                                <div class="mb-3">
+                                    <label for="section" class="form-label">Internship Applied for</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Choose</option>
+                                        <option value="hr">HR</option>
+                                        <option value="phplaravel">PHP Laravel</option>
+                                        <option value="photoshop">Photoshop</option>
+                                        <option value="htmlui">HTML UI</option>
+                                        <option value="angular">Angular</option>
+                                        <option value="flutter">Flutter</option>
+                                        <option value="netmvc">.Net MVC</option>
+                                        <option value="marketing">Marketing</option>
+                                        <option value="sales">Sales</option>
+                                        <option value="mba">MBA</option>
+                                        <option value="bba">BBA</option>
+                                        <option value="javadev">Java Developer</option>
+                                        <option value="pythondev">Python Developer</option>
+                                        <option value="iot">I O T</option>
+                                        <option value="androiddev">Android Developer</option>
+                                        <option value="iosdev">IOS Developer</option>
+                                        <option value="software">Software</option>
+                                        <option value="network">Network</option>
+                                        <option value="hardware">Hardware</option>
+                                        <option value="finance">Finance Management</option>
+                                        <option value="testing">Testing Related</option>
+                                        <option value="not">Not in the List</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="notinlist" class="form-label">If you have choosen <q>Not in the List</q>
+                                        ,<br> then please provide the details</label>
+                                    <input type="text" class="form-control" id="notinlist" required>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <h5>Do you have desktop/laptop with internet connetivity?</h5>
+                                <input class="form-check-input" type="radio" name="internet" id="yess" required>
+                                <label class="form-check-label" for="yess">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="internet" id="noo">
+                                <label class="form-check-label" for="noo">
+                                    No
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <h5>Internship time frame</h5>
+                                <input class="form-check-input" type="radio" name="time" id="1" required>
+                                <label class="form-check-label" for="1">
+                                    1 Month
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="time" id="2">
+                                <label class="form-check-label" for="2">
+                                    2 Months
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="time" id="3">
+                                <label class="form-check-label" for="3">
+                                    3 Months
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="time" id="4">
+                                <label class="form-check-label" for="4">
+                                    4 Months
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="time" id="5">
+                                <label class="form-check-label" for="5">
+                                    5 Months
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="time" id="6">
+                                <label class="form-check-label" for="6">
+                                    6 Months
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="options">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <h4>Option Details</h4>
+                                <h5>
+                                    Option 1:Certificate Only
+                                </h5>
+                                <ul>
+                                    <li>We would issue you a Internship offer letter,Completion letter on Company letter
+                                        head,
+                                        corporate email id,Linkedin profile tagging and Recommentation.
+                                    </li>
+                                    <li>Still you can work on projects,but we wont expect a 100% from you.</li>
+                                    <li>Enrollement charge applicable:<strong> &#8377;1500/- or $30/-</strong> for upto
+                                        6 months
+                                        Intern date.</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-6">
+                                <h5>
+                                    Option 2:If you want to do the real-time project work for KGE Technologies for free.
+                                </h5>
+                                <p>How it works:-</p>
+                                <ul>
+                                    <li>We will mail you an offer letter via provided email id for a minimum of 1-6
+                                        months,
+                                        based on your needs.
+                                    </li>
+                                    <li>Regularly work on assigned project and give a 100% output.</li>
+                                    <li>Office time <strong>Monday to Friday 1st & 3rd Saturdays, 9.00am to
+                                            5.30pm.</strong>,
+                                        attendance mandatory,you need to login to the tool in your desktop/laptop to
+                                        track the
+                                        same.
+                                        Allowed to take leaves during exam.
+                                    </li>
+                                    <li>You need to have a desktop/laptop to work on projects.</li>
+                                    <li>Once completed the project work with at least 90% output - we would give
+                                        Internship
+                                        Offer
+                                        and completion letter,Linkedin profile tagging with Company.
+                                    </li>
+                                    <li>Stipend : Nil during an internship,One time incentive based on output at last if
+                                        contribution
+                                        is excellent and min 90% output is given.
+                                    </li>
+                                    <li>For Time passers this is not suitable option,we need dedicated candidates to
+                                        work on
+                                        atleast
+                                        4hrs/day</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <h5>Choose Your Option</h5>
+                                <input class="form-check-input" type="radio" name="option" id="option1" required>
+                                <label class="form-check-label" for="option1">
+                                    Option 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="option" id="option2">
+                                <label class="form-check-label" for="option2">
+                                    Option 2
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <h5>For Interns we won't be paying <strong>Stipend or Salary</strong>,Can you contriute
+                                    to
+                                    project work,If you've opted for option 2 in above?</h5>
+                                <input class="form-check-input" type="radio" name="opt" id="yes" required>
+                                <label class="form-check-label" for="yes">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="opt" id="no">
+                                <label class="form-check-label" for="no">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Tentative start date</h5>
+                            <label for="date">
+                                <input type="date" name="begin" placeholder="dd-mm-yyyy" min="1997-01-01"
+                                    max="2030-12-31" name="date" id="date"></label>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div id="contactinfo">
-                            <!-- contact section -->
-                            <div class="mb-3">
-                                <label for="mb" class="form-label">Mobile number</label>
-                                <input type="number" class="form-control" id="mb" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="watzp" class="form-label">Whatsapp number</label>
-                                <input type="number" class="form-control" id="watzp" required>
-                            </div>
+                <div class="container">
+                    <div id="reference">
+                        <!-- reference section -->
+                        <div class="mb-3">
+                            <label for="refer" class="form-label">Referred By</label>
+                            <input type="text" class="form-control" id="refer">
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div id="internship">
-                            <!-- internship section -->
-                            <div class="mb-3">
-                                <label for="section" class="form-label">Internship Applied for</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Choose</option>
-                                    <option value="hr">HR</option>
-                                    <option value="phplaravel">PHP Laravel</option>
-                                    <option value="photoshop">Photoshop</option>
-                                    <option value="htmlui">HTML UI</option>
-                                    <option value="angular">Angular</option>
-                                    <option value="flutter">Flutter</option>
-                                    <option value="netmvc">.Net MVC</option>
-                                    <option value="marketing">Marketing</option>
-                                    <option value="sales">Sales</option>
-                                    <option value="mba">MBA</option>
-                                    <option value="bba">BBA</option>
-                                    <option value="javadev">Java Developer</option>
-                                    <option value="pythondev">Python Developer</option>
-                                    <option value="iot">I O T</option>
-                                    <option value="androiddev">Android Developer</option>
-                                    <option value="iosdev">IOS Developer</option>
-                                    <option value="software">Software</option>
-                                    <option value="network">Network</option>
-                                    <option value="hardware">Hardware</option>
-                                    <option value="finance">Finance Management</option>
-                                    <option value="testing">Testing Related</option>
-                                    <option value="not">Not in the List</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="notinlist" class="form-label">If you have choosen <q>Not in the List</q>
-                                    ,<br> then please provide the details</label>
-                                <input type="text" class="form-control" id="notinlist" required>
-                            </div>
+                        <div class="mb-3">
+                            <label for="refinfo" class="form-label">How did you know about Internship at KGE
+                                Technologies?</label>
+                            <input type="text" class="form-control" id="refinfo">
                         </div>
-                    </div>
-                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="referfrnd" class="form-label">Do you want to refer any friends?If so please
+                                provide
+                                their mail id or contact number</label>
+                            <input type="text" class="form-control" id="referfrnd">
+                        </div>
                         <div class="form-check">
-                            <h5>Do you have desktop/laptop with internet connetivity?</h5>
-                            <input class="form-check-input" type="radio" name="internet" id="yess" required>
-                            <label class="form-check-label" for="yess">
+                            <h5>Have you registered at <a href="http://findc2cjobs.com/"
+                                    target="blank">findc2cjobs.com</a>
+                            </h5>
+                            <input class="form-check-input" type="radio" name="time" id="yesss" required>
+                            <label class="form-check-label" for="yesss">
                                 Yes
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="internet" id="noo">
-                            <label class="form-check-label" for="noo">
-                                No
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <h5>Internship time frame</h5>
-                            <input class="form-check-input" type="radio" name="time" id="1" required>
-                            <label class="form-check-label" for="1">
-                                1 Month
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time" id="2">
-                            <label class="form-check-label" for="2">
-                                2 Months
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time" id="3">
-                            <label class="form-check-label" for="3">
-                                3 Months
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time" id="4">
-                            <label class="form-check-label" for="4">
-                                4 Months
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time" id="5">
-                            <label class="form-check-label" for="5">
-                                5 Months
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="time" id="6">
-                            <label class="form-check-label" for="6">
-                                6 Months
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div id="options">
-                    <h3>Option Details</h3>
-                    <h5>
-                        Option 1:Certificate Only
-                    </h5>
-                    <ul>
-                        <li>We would issue you a Internship offer letter,Completion letter on Company letter head,
-                            corporate email id,Linkedin profile tagging and Recommentation.
-                        </li>
-                        <li>Still you can work on projects,but we wont expect a 100% from you.</li>
-                        <li>Enrollement charge applicable:<strong> &#8377;1500/- or $30/-</strong> for upto 6 months
-                            Intern date.</li>
-                    </ul>
-                    <h5>
-                        Option 2:If you want to do the real-time project work for KGE Technologies for free.
-                    </h5>
-                    <p>How it works:-</p>
-                    <ul>
-                        <li>We will mail you an offer letter via provided email id for a minimum of 1-6 months,
-                            based on your needs.
-                        </li>
-                        <li>Regularly work on assigned project and give a 100% output.</li>
-                        <li>Office time <strong>Monday to Friday 1st & 3rd Saturdays, 9.00am to 5.30pm.</strong>,
-                            attendance mandatory,you need to login to the tool in your desktop/laptop to track the same.
-                            Allowed to take leaves during exam.
-                        </li>
-                        <li>You need to have a desktop/laptop to work on projects.</li>
-                        <li>Once completed the project work with at least 90% output - we would give Internship Offer
-                            and completion letter,Linkedin profile tagging with Company.
-                        </li>
-                        <li>Stipend : Nil during an internship,One time incentive based on output at last if
-                            contribution
-                            is excellent and min 90% output is given.
-                        </li>
-                        <li>For Time passers this is not suitable option,we need dedicated candidates to work on atleast
-                            4hrs/day</li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-check">
-                            <h5>Choose Your Option</h5>
-                            <input class="form-check-input" type="radio" name="option" id="option1" required>
-                            <label class="form-check-label" for="option1">
-                                Option 1
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="option" id="option2">
-                            <label class="form-check-label" for="option2">
-                                Option 2
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-check">
-                            <h5>For Interns we won't be paying <strong>Stipend or Salary</strong>,Can you contriute to
-                                project work,If you've opted for option 2 in above?</h5>
-                            <input class="form-check-input" type="radio" name="yes" id="yes">
-                            <label class="form-check-label" for="yes">
-                                Yes
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="no" id="no">
-                            <label class="form-check-label" for="no">
+                            <input class="form-check-input" type="radio" name="time" id="nooo">
+                            <label class="form-check-label" for="nooo">
                                 No
                             </label>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <h5>Tentative start date</h5>
-                        <label for="date">
-                            <input type="date" name="begin" placeholder="dd-mm-yyyy" min="1997-01-01" max="2030-12-31"
-                                name="date" id="date"></label>
-                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div id="reference">
-                    <!-- reference section -->
-                    <div class="mb-3">
-                        <label for="refer" class="form-label">Referred By</label>
-                        <input type="text" class="form-control" id="refer">
-                    </div>
-                    <div class="mb-3">
-                        <label for="refinfo" class="form-label">How did you know about Internship at KGE
-                            Technologies?</label>
-                        <input type="text" class="form-control" id="refinfo">
-                    </div>
-                    <div class="mb-3">
-                        <label for="referfrnd" class="form-label">Do you want to refer any friends?If so please provide
-                            their mail id or contact number</label>
-                        <input type="text" class="form-control" id="referfrnd">
-                    </div>
-                    <div class="form-check">
-                        <h5>Have you registered at <a href="http://findc2cjobs.com/" target="blank">findc2cjobs.com</a>
-                        </h5>
-                        <input class="form-check-input" type="radio" name="time" id="yesss" required>
-                        <label class="form-check-label" for="yesss">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="time" id="nooo">
-                        <label class="form-check-label" for="nooo">
-                            No
-                        </label>
-                    </div>
+                <div class="d-grid gap-2">
+                    <a class="btn btn-outline-primary  btnpg" href="sucess.html" role="button">Submit</a>
                 </div>
-            </div>
-            <div class="d-grid gap-2">
-                <a class="btn btn-outline-primary  btnpg" href="sucess.html" role="button">Submit</a>
-            </div>
-        </form>
+            </form>
         </div>
         <footer class="my-5 pt-5 text-center text-small">
             <!-- footer section -->
