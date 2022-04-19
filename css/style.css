@@ -162,14 +162,15 @@ select {
 /* button styling */
 
 .btn {
-    padding: 0.75rem;
+    padding: 0.5rem;
     width: 100px;
     cursor: pointer;
     border-radius: 10px;
 }
 
-.btn-reset {
-    margin-top: 3rem;
+.btn,
+.btn-group {
+    margin: 2rem;
 }
 
 /* content styling */
@@ -183,32 +184,18 @@ select {
 
 /* media query for screen adjustments */
 
-@media only screen and (max-width:900px) {
-    .login-wrap {
-        width: 90%;
+@media only screen and (max-width:1000px) {
+    .reg-wrap {
+        width: 95%;
     }
 
     form {
         width: 100%;
     }
 
-    .row,
-    h4,
-    h5,
-    li {
-        text-align: left;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-    }
-
-    h5 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.80rem;
+    .progress-step::after {
+        content: attr(data-title);
+        content: none;
     }
 }
 
