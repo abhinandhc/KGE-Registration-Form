@@ -145,16 +145,6 @@ select {
     max-width: 50%;
 }
 
-/* wrap styling */
-.reg-wrap {
-    width: 100%;
-    margin: auto;
-    padding-bottom: 2rem;
-    max-width: 80%;
-    position: relative;
-    background-size: cover;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
-}
 
 .row {
     margin-top: 2rem;
@@ -187,11 +177,8 @@ select {
 
 /* media query for screen adjustments */
 
-@media (max-width:500px) {
-    .reg-wrap {
-        width: 100%;
-    }
 
+@media screen and (max-width:500px) {
     form {
         width: 100%;
         text-align: left;
@@ -205,13 +192,11 @@ select {
 
     .btn {
         padding: 0.25rem;
-        margin: 0.5rem;
+        margin: 0.25rem;
     }
 
     .btn-group {
         margin-left: 0%;
-        justify-content: center;
-        text-align: center;
     }
 }
 
