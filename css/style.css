@@ -184,7 +184,7 @@ select {
 
 /* media query for screen adjustments */
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:480px) {
     .reg-wrap {
         width: 95%;
     }
