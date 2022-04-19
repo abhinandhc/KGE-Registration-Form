@@ -145,6 +145,7 @@ select {
     max-width: 50%;
 }
 
+
 .row {
     margin-top: 2rem;
 }
@@ -176,7 +177,8 @@ select {
 
 /* media query for screen adjustments */
 
-@media screen and (max-width:500px) {
+
+@media screen and (max-width:800px) {
     form {
         width: 100%;
         position: relative;
