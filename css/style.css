@@ -111,8 +111,9 @@ input[type=text],
 [type=number],
 [type=email],
 [type=date] {
-    background-color: rgba(34, 32, 32, 0.5);
+    background-color: rgba(51, 48, 48, 0.5);
     border: 1px solid white;
+    color: white;
     border-radius: 10px;
     width: 80%;
     height: 3rem;
@@ -171,6 +172,8 @@ select {
 .btn,
 .btn-group {
     margin: 2rem;
+    margin-left: 0%;
+    text-align: center;
 }
 
 /* content styling */
@@ -184,18 +187,31 @@ select {
 
 /* media query for screen adjustments */
 
-@media only screen and (max-width:480px) {
+@media (max-width:500px) {
     .reg-wrap {
-        width: 95%;
+        width: 100%;
     }
 
     form {
         width: 100%;
+        text-align: left;
+        position: relative;
     }
 
     .progress-step::after {
         content: attr(data-title);
         content: none;
+    }
+
+    .btn {
+        padding: 0.25rem;
+        margin: 0.5rem;
+    }
+
+    .btn-group {
+        margin-left: 0%;
+        justify-content: center;
+        text-align: center;
     }
 }
 
