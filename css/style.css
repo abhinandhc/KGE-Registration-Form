@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* html {
+    background-color: #323232;
+} */
+
 /* navbar styling */
 .bg-custom {
     background-color: #06113C;
@@ -16,9 +20,7 @@
 /* body styling */
 body {
     margin: 0;
-    color: #edf3ff;
-    background: #c8c8c8;
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxILNNnoHqJA96SNXj1SAvYRjgyNG2gkr-fA&usqp=CAU) fixed;
+    background-color: black;
     /* set a fixed background from google */
     background-size: cover;
     place-items: center;
@@ -27,6 +29,13 @@ body {
 
 #main {
     text-align: center;
+}
+
+.reg-wrap,
+#success,
+#contact {
+    background-color: black;
+    color: white;
 }
 
 /* Progressbar */
@@ -39,8 +48,7 @@ body {
     color: #06113C;
 }
 
-.progressbar::before,
-.progress {
+.progressbar::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -51,11 +59,6 @@ body {
     z-index: -1;
 }
 
-.progress {
-    background-color: #06113C;
-    width: 0%;
-    transition: 0.3s;
-}
 
 .progress-step {
     width: 2.4rem;
@@ -175,6 +178,24 @@ select {
     font-size: 1.25rem;
 }
 
+/* contact section styling */
+#contact {
+    margin-top: 0%;
+    padding-top: 1.5rem;
+}
+
+/* footer section styling */
+#footer {
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e9e8e5;
+    padding-top: 20px;
+    height: 60px;
+    text-align: center;
+}
+
 /* media query for screen adjustments */
 
 
@@ -205,4 +226,14 @@ select {
 #success {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1.5rem;
+    max-height: 80%;
+}
+
+.butn {
+    text-align: center;
+}
+
+.btn-home {
+    background-color: #06113C;
+    color: #dcdcdc;
 }
